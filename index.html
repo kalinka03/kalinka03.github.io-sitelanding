@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet">	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style/fonts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet">	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/fonts.css">
+	<link rel="stylesheet" href="css/media.css" />
+	<script>
+		$(document).ready(function(){
+			$('.bxslider-1').bxSlider({
+				minSlides: 1,
+				maxSlides: 1,
+				auto: true,
+			})
+		});
+	</script>
+	<script>
+		$(function(){
+			$('.burger, .burger_trigger, .menu_mobile').click(function(){
+				$('.menu_mobile').toggleClass('menu_opened');
+			})
+			$(document).click(function(event) {
+				if ($(event.target).closest(".burger_trigger").length ) return;
+				$('.menu_mobile').removeClass('menu_opened');
+				event.stopPropagation();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#menu, .menu_mobile").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+				buttom = $(id).offset().buttom;
+				$('body,html').animate({scrollTop: top}, 1800);
+				$('body,html').animate({scrollButtom: buttom}, 1800);
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<ul class="bxslider-1 position-slider">
+			<li><img class="slider-img" src="image/slider-girl.png" ></li>
+			<li><img class="slider-img"  src="image/slider-forest.png"></li>
+		</ul>
+		<div class="container-slider">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="header-container fluid">
+							<div class="col-sm-2 col-xs-8">
+								<div class="menu-main">
+									<p>THUNDER</p>
+								</div>
+							</div>
+							<div class="col-sm-10 col-xs-4">
+								<div class="menu clearfix">
+									<ul class="menu-nav">
+										<li>
+											<a href="">HOME</a>
+										</li>
+										<li>
+											<a href="">PORTFOLIO</a>
+										</li>
+										<li>
+											<a href="">SERVICES</a>
+										</li>
+										<li>
+											<a href="">STAFF</a>
+										</li>
+										<li>
+											<a href="">PAGES</a>
+											<ul class="menu-hover">
+												<li>
+													<a href="">Pages</a>
+													<a href="">Archive</a>
+													<a href="">Contact</a>
+													<a href="">Gallery</a>
+													<a href="">Login</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="">FEATURES</a>
+										</li>
+										<li>
+											<a href="">BLOG</a>
+										</li>
+										<li>
+											<a href="">CONTACT</a>
+										</li>
+									</ul>
+								</div>
+								<div class="burger"></div>
+								<div class="burger_trigger">
+									<ul  id="menu" class="menu_mobile" clearfix>
+										<li><a href="#">HOME</a>
+										</li>
+										<li><a href="#">PORTFOLIO</a>
+										</li>
+										<li><a href="#">SERVICES</a>
+										</li>
+										<li><a href="#">STAFF</a>
+										</li>
+										<li><a href="#">PAGES</a>
+										</li>
+										<li><a href="#">FEATURES</a>
+										</li>
+										<li><a href="#">BLOG</a>
+										</li>
+										<li><a href="#">CONTACT</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4  col-xs-6">
+					<div class="col-picture">
+						<div class="picture_lorem">
+							<img src="image/poverful.png">
+						</div>
+						<h1>POVERFUL</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et nibh. Cras quis libero quis urna commodo vulputate.</p>
+					</div>
+				</div>
+				<div class="col-sm-4  col-xs-6">
+					<div class="col-picture">
+						<div class="picture_lorem">
+							<img src="image/creative.png">
+						</div>
+						<h1>CREATIVE</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et nibh. Cras quis libero quis urna commodo vulputate.</p>
+					</div>
+				</div>
+				<div class="col-sm-4  col-xs-12">
+					<div class="col-picture">
+						<div class="picture_lorem">
+							<img src="image/localized.png">
+						</div>
+						<h1>LOCALIZED</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et nibh. Cras quis libero quis urna commodo vulputate.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-flowers">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<p class="name-flowers-blok">Recent Work</p>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="browse">
+						<a href="#">BROWSE ALL</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-xs-3">
+					<div class="blok-flowers">
+						<img src="image/flowers.png">
+
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-3">
+					<div class="blok-flowers">
+						<img src="image/flowers.png">
+
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-3">
+					<div class="blok-flowers">
+						<img src="image/flowers.png">
+
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-3">
+					<div class="blok-flowers">
+						<img src="image/flowers.png">
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-xs-3 ">
+					<div class="blok-flowers">
+						<img src="image/flowers.png">
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-3">
+					<div class="blok-flowers">
+						<img src="image/flowers.png">
+
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-3">
+					<div class="blok-flowers">
+						<img src="image/flowers.png">
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-3">
+					<div class="blok-flowers last">
+						<img src="image/flowers.png">
+						<div class="flowers-hover">
+							<p>A Sample Portfolio</p>
+							<div class="img-hover clearfix">
+								<img class="left" src="image/icon-green.png">
+								<img  class="left" src="image/icon-green-two.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="computer-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7 col-xs-7">
+					<p class="thunder">Hear The Thunder?</p>
+					<p class="wordpress-theme">Let me introduce you to a clean, simple, yet powerful PREMIUM WORDPRESS THEME, created specifically for you.</p>
+					<div class="button-get">
+						<a href="#">GET STARTED</a>
+					</div>
+				</div>
+				<div class="col-sm-5 col-xs-5">
+					<div class="img-computer">
+						<img src="image/computer.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container_news">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="news-name">Latest News</p>
+				</div>
+				<div class="col-sm-4 col-xs-4">
+					<div class="nature">
+						<img src="image/grass.png">
+					</div>
+					<p class="info-blog">THIS IS A SAMPLE BLOG POST WITH AN EXTRA SUPER LONG TITLE</p>
+					<div class="line">
+					</div>
+					<p class="info-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et nibh. Cras quis...</p>
+				</div>
+				<div class="col-sm-4 col-xs-4">
+					<div class="nature">
+						<img src="image/grass.png">
+					</div>
+					<p class="info-blog">THIS IS A SAMPLE BLOG POST</p>
+					<div class="line">
+					</div>
+					<p class="info-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et nibh. Cras quis...</p>
+				</div>
+				<div class="col-sm-4 col-xs-4">
+					<div class="nature">
+						<img src="image/grass.png">
+					</div>
+					<p class="info-blog">THIS IS A SAMPLE BLOG POST</p>
+					<div class="line">
+					</div>
+					<p class="info-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et nibh. Cras quis...</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="clients-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="container-girl-name">Testimonials From Our Clients</p>
+					<p class="container-people">See what people are saying about our work</p>
+					<div class="white-container">
+						<p>This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!</p>
+					</div>
+					<div class="button-client">
+						<a href="#">Client Name</a>
+					</div>
+					<div class="container-girls clearfix">
+						<div class="icon-girl">
+						</div>
+						<div class="icon-girl">
+						</div>
+						<div class="icon-girl">
+						</div>
+						<div class="icon-girl next-hover">
+						</div>
+						<div class="icon-girl next-hover">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-sample">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 col-xs-2">
+					<p class="clients-sample">OUR CLIENTS</p>
+				</div>
+				<div class="col-sm-10 col-xs-10">
+					<div class="line-colom">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample">
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-1-5  col-md-1-5  col-lg-1-5">
+					<div class="picture-sample last">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-castle">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="product">
+						<h2>NEWEST PRODUCTS</h2>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="castle-block">
+						<div class="img-castle">
+							<img src="image/key.png">
+
+						</div>
+						<p class="text-castle">Woo Album #1</p>
+						<p class="text-castle color">$3</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="castle-block">
+						<div class="img-castle">
+							<img src="image/key.png">
+						</div>
+						<p class="text-castle">Woo Album #2</p>
+						<p class="text-castle color">$3</p>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="castle-block">
+						<div class="img-castle">
+							<img src="image/key.png">
+						</div>
+						<p class="text-castle">Woo Album #3</p>
+						<p class="text-castle color">$3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-start">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>Don’t wait, starty today with Thunder for WordPress!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-xs-6">
+					<h3>RECENT POSTS</h3>
+					<p>This is a sample blog post with an extra super long title
+						This is a sample blog post
+						This is another sample post
+						This is yet another sample
+					This is a fifth sample blog post</p>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<h3>RECENT COMMENTS</h3>
+					<p>visitor on This is a fifth sample blog post
+						visitor on This is another sample blog post
+						visitor on This is yet another sample blog post
+						visitor on This is yet another sample blog post
+					visitor on This is a sample blog post</p>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<h3>TAG CLOUD</h3>
+					<div class="social-icon clearfix">
+						<div class="social-icon-tag">
+							<a href="#">sample</a>
+						</div>
+						<div class="social-icon-tag">
+							<a href="#">tag</a>
+						</div>
+						<div class="social-icon-tag">
+							<a href="#">sample</a>
+						</div>
+					</div>
+					<div class="social-icon next clearfix">
+						<div class="social-icon-tag">
+							<a href="#">tag</a>
+						</div>
+						<div class="social-icon-tag">
+							<a href="#">tag</a>
+						</div>
+						<div class="social-icon-tag">
+							<a href="#">sample</a>
+						</div>
+						<div class="social-icon-tag">
+							<a href="#">tag</a>
+						</div>
+					</div>
+					<div class="social-icon clearfix">
+						<div class="social-icon-tag">
+							<a href="#">sample</a>
+						</div>
+						<div class="social-icon-tag">
+							<a href="#">tag</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<h3>THUNDER</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec dolor vitae neque semper aliquet sed et nibh. Cras quis libero quis urna commodo vulputate.</p>
+					<input type="text" name="" placeholder="Search...">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="line-footer">
+					</div>
+				</div>
+				<div class="col-sm-6">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xs-6">
+					<div class="left-footer">
+						<p>COPYRIGHT 2013 - THUNDER</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="rigth-footer">
+						<a href="#" class="soc icons"> </a>
+						<a href="#"  class="twitter icons"></a>
+						<a href="#"  class="facebook icons"></a>
+						<a href="#"  class="dribbble icons"></a>
+						<a href="#"  class="behanceicons"></a>
+						<a href="#"  class="linkedib icons"></a>
+						<a href="#"  class="pinterest icons"></a>
+						<a href="#"  class="tumb icons"></a>
+						<a href="#"  class="vimeo icons"></a>
+						<a href="#"  class="youtube icons"></a>
+						<a href="#"  class="fickr-1 icons"></a>
+						<a href="#"  class="forst icons"></a>
+						<a href="#"  class="rss icons"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+</body>
+</html>

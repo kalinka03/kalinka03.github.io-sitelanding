@@ -1,0 +1,342 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1024px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.container-slider{
+	width: 100%;
+}
+.col-3 {
+max-width: 23%;
+display: inline-block;
+}
+.menu{
+	margin-left: 20px;
+}
+.menu>ul>li>a{
+padding: 10px 0 15px 18px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.burger, .burger_trigger {
+display: block;
+}
+.container{
+max-width: 750px;
+}
+.name-flowers-blok{
+margin-top: 30px;
+margin-bottom: 0;
+}
+.browse {
+margin-top: 25px;
+margin-bottom: 25px;
+float: left;
+}
+.container-slider{
+height: 50px;
+}
+.menu-main{
+	    background-size: contain;
+	    height: 20px;
+}
+.menu-main p{
+	font-size: 20px;
+margin-left: -30px;
+}
+.menu{
+display: none;
+}
+h1{
+font-size: 24px;
+}
+.col-picture p{
+font-size: 13px;
+}
+.menu{
+float: none;
+}
+.picture_lorem{
+	    margin-bottom: 5px;
+}
+
+.col-3 {
+max-width: 23%;
+display: inline-block;
+}
+.flowers-hover p{
+    margin-top: 40px;
+}
+.thunder{
+margin-top: 70px;
+    margin-bottom: 10px;
+}
+.img-computer{
+	margin-top: 150px;
+}
+.wordpress-theme{
+	font-size: 16px;
+}
+.button-get{
+	margin-bottom: 30px;
+}
+.col-picture{
+margin-top: 30px;
+margin-bottom: 25px;
+}
+.news-name{
+margin-top: 50px;
+}
+}
+
+
+@media only screen and (max-width : 680px) {
+
+.flowers-hover p{
+    margin-top: 40px;
+}
+.flowers-hover p{
+font-size: 10px;
+}
+.castle-block{
+
+}
+
+}
+@media only screen and (max-width : 560px) {
+.left{
+width: 15%;
+}
+
+.flowers-hover p{
+    margin-top: 25px;
+}
+
+.info-blog{
+font-size: 14px;
+}
+.info-news{
+font-size: 10px;
+}
+.news-name, .container-girl-name, h3{
+margin-top: 40px;
+}
+.info-news{
+    margin-bottom: 30px;
+}
+.container-people{
+margin-bottom: 10px;
+}
+
+.white-container p {
+font-size: 20px;
+line-height: 1.2;
+}
+.container-girls{
+	margin-bottom: 40px;
+}
+.img-castle{
+	    margin: 10px 15px 25px 10px;
+}
+.text-castle{
+	padding-bottom: 10px;
+}
+.container-start p {
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 31px;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.col-picture{
+	margin-bottom: 30px;
+}
+.name-flowers-blok , .browse{
+	    margin-top: 10px;
+}
+ .browse{
+	        margin-bottom: 40px;
+}
+.thunder{
+	margin-top: 25px;
+}
+.button-get a{
+	font-size: 15px;
+padding: 8px;
+
+}
+.wordpress-theme{
+	    margin-bottom: 30px;
+}
+.text-castle{
+	font-size: 13px;
+}
+footer p{
+	    line-height: 1.3;
+}
+input{
+	width: 150px;
+	    background-position-x: 115px;
+	    margin-bottom: 30px;
+}
+.menu-main p{
+	font-size: 15px;
+}
+.header-container{
+	padding: 10px 0;
+}
+.container-slider{
+	    height: 35px;
+}
+.col-picture{
+	margin-top: 0;
+}
+h1{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.menu_mobile {
+font-size: 10px;
+margin-top: 39px;
+
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px) {
+.img-computer{
+	display: none;
+}
+.burger_trigger{
+	width: 50px;
+}
+.news-name, .info-blog, .container-girl-name, h3{
+margin-top: 10px;
+}
+.news-name{
+margin-bottom: 15px;
+}
+.info-blog{
+font-size: 9px;
+}
+.info-news{
+font-size: 8px;
+line-height: 1;
+}
+h3{
+margin-bottom: 10px;
+}
+.container-sample{
+display: none;
+}
+h2{
+margin-top: 0;
+}
+.img-castle{
+    margin: 10px 15px 15px 10px;
+}
+.text-castle{
+font-size: 8px;
+}
+.castle-block{
+margin-bottom: 10px;
+}
+.social-icon{
+display: none;
+}
+footer p{
+line-height: 12px;
+font-family: 'Open_Sans';
+    font-size: 9px;
+}
+input{
+width: 90px;
+height: 24px;
+font-size: 7px;
+    padding-left: 8px;
+}
+.container-girls{
+	width: 230px;
+}
+.next-hover{
+	display: none;
+}
+.thunder{
+	font-size: 15px;
+}
+.wordpress-theme, .button-get a{
+	font-size: 8px;
+}
+.wordpress-theme{
+	margin-bottom: 10px;
+}
+.news-name{
+	font-size: 20px;
+}
+}
+@media only screen and (max-width : 320px) {
+.container-girl-name{
+	font-size: 20px;
+}
+h3{
+font-size: 9px;
+}
+.menu_mobile li{
+padding-left: 0;
+padding-right: 0;
+}
+.menu_mobile{
+line-height: 10px;
+
+}
+}
+@media only screen and (max-width : 240px) {
+.menu-main p{
+	font-size: 10px;
+}
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+@media only screen and (min-width : 240px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+@media only screen and (min-width : 1020px) {
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
